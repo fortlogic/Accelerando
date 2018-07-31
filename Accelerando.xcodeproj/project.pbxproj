@@ -29,6 +29,7 @@
 		1F2EC252211119E800F5DCDD /* AccelerandoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccelerandoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2EC257211119E800F5DCDD /* AccelerandoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccelerandoTests.m; sourceTree = "<group>"; };
 		1F2EC259211119E800F5DCDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F2EC263211119F900F5DCDD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 		1F2EC23F211119E800F5DCDD = {
 			isa = PBXGroup;
 			children = (
+				1F2EC263211119F900F5DCDD /* README.md */,
 				1F2EC24B211119E800F5DCDD /* Accelerando */,
 				1F2EC256211119E800F5DCDD /* AccelerandoTests */,
 				1F2EC24A211119E800F5DCDD /* Products */,
