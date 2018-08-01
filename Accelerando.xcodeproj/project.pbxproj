@@ -10,8 +10,11 @@
 		1F2EC253211119E800F5DCDD /* Accelerando.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2EC249211119E800F5DCDD /* Accelerando.framework */; };
 		1F2EC258211119E800F5DCDD /* AccelerandoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2EC257211119E800F5DCDD /* AccelerandoTests.m */; };
 		1F2EC25A211119E800F5DCDD /* Accelerando.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F2EC24C211119E800F5DCDD /* Accelerando.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F2EC2682111256100F5DCDD /* workspace.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F2EC2662111256100F5DCDD /* workspace.h */; };
+		1F2EC2682111256100F5DCDD /* workspace.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F2EC2662111256100F5DCDD /* workspace.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F2EC2692111256100F5DCDD /* workspace.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F2EC2672111256100F5DCDD /* workspace.c */; };
+		1F2EC26C2111319400F5DCDD /* polynomial.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F2EC26A2111319400F5DCDD /* polynomial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F2EC26D2111319400F5DCDD /* polynomial.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F2EC26B2111319400F5DCDD /* polynomial.c */; };
+		1F2EC270211132B900F5DCDD /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2EC26F211132B900F5DCDD /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 		1F2EC263211119F900F5DCDD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1F2EC2662111256100F5DCDD /* workspace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = workspace.h; sourceTree = "<group>"; };
 		1F2EC2672111256100F5DCDD /* workspace.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = workspace.c; sourceTree = "<group>"; };
+		1F2EC26A2111319400F5DCDD /* polynomial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = polynomial.h; sourceTree = "<group>"; };
+		1F2EC26B2111319400F5DCDD /* polynomial.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = polynomial.c; sourceTree = "<group>"; };
+		1F2EC26F211132B900F5DCDD /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2EC270211132B900F5DCDD /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +69,7 @@
 				1F2EC24B211119E800F5DCDD /* Accelerando */,
 				1F2EC256211119E800F5DCDD /* AccelerandoTests */,
 				1F2EC24A211119E800F5DCDD /* Products */,
+				1F2EC26E211132B800F5DCDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +85,9 @@
 		1F2EC24B211119E800F5DCDD /* Accelerando */ = {
 			isa = PBXGroup;
 			children = (
-				1F2EC2652111254A00F5DCDD /* Tools */,
 				1F2EC24C211119E800F5DCDD /* Accelerando.h */,
+				1FB98371211141B900135AF3 /* Maths */,
+				1F2EC2652111254A00F5DCDD /* Tools */,
 				1F2EC24D211119E800F5DCDD /* Info.plist */,
 			);
 			path = Accelerando;
@@ -102,6 +111,23 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		1F2EC26E211132B800F5DCDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F2EC26F211132B900F5DCDD /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FB98371211141B900135AF3 /* Maths */ = {
+			isa = PBXGroup;
+			children = (
+				1F2EC26A2111319400F5DCDD /* polynomial.h */,
+				1F2EC26B2111319400F5DCDD /* polynomial.c */,
+			);
+			path = Maths;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -110,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F2EC2682111256100F5DCDD /* workspace.h in Headers */,
+				1F2EC26C2111319400F5DCDD /* polynomial.h in Headers */,
 				1F2EC25A211119E800F5DCDD /* Accelerando.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F2EC2692111256100F5DCDD /* workspace.c in Sources */,
+				1F2EC26D2111319400F5DCDD /* polynomial.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
